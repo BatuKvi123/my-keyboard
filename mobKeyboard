@@ -1,0 +1,1722 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 120 | Scripts: 58 | Modules: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.ScreenGui.MainKeyboard
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(85, 85, 85);
+G2L["2"]["BackgroundTransparency"] = 0.550000011920929;
+G2L["2"]["Size"] = UDim2.new(0, 574, 0, 388);
+G2L["2"]["Position"] = UDim2.new(0.20660150051116943, 0, 0.0701402798295021, 0);
+G2L["2"]["Name"] = [[MainKeyboard]];
+
+-- StarterGui.ScreenGui.MainKeyboard.KF
+G2L["3"] = Instance.new("Frame", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["BackgroundTransparency"] = 0.550000011920929;
+G2L["3"]["Size"] = UDim2.new(0, 535, 0, 359);
+G2L["3"]["Position"] = UDim2.new(0.032385051250457764, 0, 0.03179192915558815, 0);
+G2L["3"]["Name"] = [[KF]];
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Q
+G2L["4"] = Instance.new("TextButton", G2L["3"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["4"]["Name"] = [[Q]];
+G2L["4"]["Text"] = [[Q]];
+G2L["4"]["Position"] = UDim2.new(0.22429907321929932, 0, 0.25905293226242065, 0);
+G2L["4"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Q.LocalScript
+G2L["5"] = Instance.new("LocalScript", G2L["4"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Tab
+G2L["6"] = Instance.new("TextButton", G2L["3"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Size"] = UDim2.new(0, 110, 0, 37);
+G2L["6"]["Name"] = [[Tab]];
+G2L["6"]["Text"] = [[Tab]];
+G2L["6"]["Position"] = UDim2.new(0, 0, 0.25905293226242065, 0);
+G2L["6"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Tab.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.W
+G2L["8"] = Instance.new("TextButton", G2L["3"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["8"]["Name"] = [[W]];
+G2L["8"]["Text"] = [[W]];
+G2L["8"]["Position"] = UDim2.new(0.2878504991531372, 0, 0.25905293226242065, 0);
+G2L["8"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.W.LocalScript
+G2L["9"] = Instance.new("LocalScript", G2L["8"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.E
+G2L["a"] = Instance.new("TextButton", G2L["3"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["a"]["Name"] = [[E]];
+G2L["a"]["Text"] = [[E]];
+G2L["a"]["Position"] = UDim2.new(0.34953275322914124, 0, 0.25905293226242065, 0);
+G2L["a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.E.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.R
+G2L["c"] = Instance.new("TextButton", G2L["3"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["c"]["Name"] = [[R]];
+G2L["c"]["Text"] = [[R]];
+G2L["c"]["Position"] = UDim2.new(0.41308414936065674, 0, 0.25905293226242065, 0);
+G2L["c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.R.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.T
+G2L["e"] = Instance.new("TextButton", G2L["3"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["e"]["Name"] = [[T]];
+G2L["e"]["Text"] = [[T]];
+G2L["e"]["Position"] = UDim2.new(0.47663554549217224, 0, 0.25905293226242065, 0);
+G2L["e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.T.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Y
+G2L["10"] = Instance.new("TextButton", G2L["3"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["10"]["Name"] = [[Y]];
+G2L["10"]["Text"] = [[Y]];
+G2L["10"]["Position"] = UDim2.new(0.5401869416236877, 0, 0.25905293226242065, 0);
+G2L["10"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Y.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["10"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.U
+G2L["12"] = Instance.new("TextButton", G2L["3"]);
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["12"]["Name"] = [[U]];
+G2L["12"]["Text"] = [[U]];
+G2L["12"]["Position"] = UDim2.new(0.6037383675575256, 0, 0.25905293226242065, 0);
+G2L["12"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.U.LocalScript
+G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.I
+G2L["14"] = Instance.new("TextButton", G2L["3"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextScaled"] = true;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["14"]["Name"] = [[I]];
+G2L["14"]["Text"] = [[I]];
+G2L["14"]["Position"] = UDim2.new(0.6654205918312073, 0, 0.25905293226242065, 0);
+G2L["14"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.I.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.O
+G2L["16"] = Instance.new("TextButton", G2L["3"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["16"]["Name"] = [[O]];
+G2L["16"]["Text"] = [[O]];
+G2L["16"]["Position"] = UDim2.new(0.7289720177650452, 0, 0.25905293226242065, 0);
+G2L["16"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.O.LocalScript
+G2L["17"] = Instance.new("LocalScript", G2L["16"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.P
+G2L["18"] = Instance.new("TextButton", G2L["3"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["18"]["Name"] = [[P]];
+G2L["18"]["Text"] = [[P]];
+G2L["18"]["Position"] = UDim2.new(0.7925234436988831, 0, 0.25905293226242065, 0);
+G2L["18"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.P.LocalScript
+G2L["19"] = Instance.new("LocalScript", G2L["18"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.CapsLock
+G2L["1a"] = Instance.new("TextButton", G2L["3"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Size"] = UDim2.new(0, 120, 0, 37);
+G2L["1a"]["Name"] = [[CapsLock]];
+G2L["1a"]["Text"] = [[CapsLock]];
+G2L["1a"]["Position"] = UDim2.new(0, 0, 0.3621169924736023, 0);
+G2L["1a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.CapsLock.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.A
+G2L["1c"] = Instance.new("TextButton", G2L["3"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["1c"]["Name"] = [[A]];
+G2L["1c"]["Text"] = [[A]];
+G2L["1c"]["Position"] = UDim2.new(0.25794392824172974, 0, 0.3621169924736023, 0);
+G2L["1c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.A.LocalScript
+G2L["1d"] = Instance.new("LocalScript", G2L["1c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.S
+G2L["1e"] = Instance.new("TextButton", G2L["3"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["1e"]["Name"] = [[S]];
+G2L["1e"]["Text"] = [[S]];
+G2L["1e"]["Position"] = UDim2.new(0.32149532437324524, 0, 0.3621169924736023, 0);
+G2L["1e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.S.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.D
+G2L["20"] = Instance.new("TextButton", G2L["3"]);
+G2L["20"]["TextWrapped"] = true;
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextScaled"] = true;
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["20"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["20"]["Name"] = [[D]];
+G2L["20"]["Text"] = [[D]];
+G2L["20"]["Position"] = UDim2.new(0.38504672050476074, 0, 0.3621169924736023, 0);
+G2L["20"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.D.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F
+G2L["22"] = Instance.new("TextButton", G2L["3"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["22"]["Name"] = [[F]];
+G2L["22"]["Text"] = [[F]];
+G2L["22"]["Position"] = UDim2.new(0.44859811663627625, 0, 0.3621169924736023, 0);
+G2L["22"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.G
+G2L["24"] = Instance.new("TextButton", G2L["3"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["24"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["24"]["Name"] = [[G]];
+G2L["24"]["Text"] = [[G]];
+G2L["24"]["Position"] = UDim2.new(0.5121495127677917, 0, 0.3621169924736023, 0);
+G2L["24"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.G.LocalScript
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.H
+G2L["26"] = Instance.new("TextButton", G2L["3"]);
+G2L["26"]["TextWrapped"] = true;
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["TextScaled"] = true;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["26"]["TextSize"] = 14;
+G2L["26"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["26"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["26"]["Name"] = [[H]];
+G2L["26"]["Text"] = [[H]];
+G2L["26"]["Position"] = UDim2.new(0.5757009387016296, 0, 0.3621169924736023, 0);
+G2L["26"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.H.LocalScript
+G2L["27"] = Instance.new("LocalScript", G2L["26"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.J
+G2L["28"] = Instance.new("TextButton", G2L["3"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["28"]["Name"] = [[J]];
+G2L["28"]["Text"] = [[J]];
+G2L["28"]["Position"] = UDim2.new(0.6392523646354675, 0, 0.3621169924736023, 0);
+G2L["28"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.J.LocalScript
+G2L["29"] = Instance.new("LocalScript", G2L["28"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.K
+G2L["2a"] = Instance.new("TextButton", G2L["3"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["2a"]["Name"] = [[K]];
+G2L["2a"]["Text"] = [[K]];
+G2L["2a"]["Position"] = UDim2.new(0.7028037905693054, 0, 0.3621169924736023, 0);
+G2L["2a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.K.LocalScript
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.L
+G2L["2c"] = Instance.new("TextButton", G2L["3"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["2c"]["Name"] = [[L]];
+G2L["2c"]["Text"] = [[L]];
+G2L["2c"]["Position"] = UDim2.new(0.7663552165031433, 0, 0.3621169924736023, 0);
+G2L["2c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.L.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift
+G2L["2e"] = Instance.new("TextButton", G2L["3"]);
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextScaled"] = true;
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Size"] = UDim2.new(0, 79, 0, 37);
+G2L["2e"]["Name"] = [[Shift]];
+G2L["2e"]["Text"] = [[Shift]];
+G2L["2e"]["Position"] = UDim2.new(0.014953271485865116, 0, 0.46518105268478394, 0);
+G2L["2e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift.LocalScript
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Z
+G2L["30"] = Instance.new("TextButton", G2L["3"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["30"]["Name"] = [[Z]];
+G2L["30"]["Text"] = [[Z]];
+G2L["30"]["Position"] = UDim2.new(0.2953270971775055, 0, 0.4651810824871063, 0);
+G2L["30"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Z.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.X
+G2L["32"] = Instance.new("TextButton", G2L["3"]);
+G2L["32"]["TextWrapped"] = true;
+G2L["32"]["BorderSizePixel"] = 0;
+G2L["32"]["TextScaled"] = true;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["32"]["Name"] = [[X]];
+G2L["32"]["Text"] = [[X]];
+G2L["32"]["Position"] = UDim2.new(0.358878493309021, 0, 0.4651810824871063, 0);
+G2L["32"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.X.LocalScript
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.C
+G2L["34"] = Instance.new("TextButton", G2L["3"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextScaled"] = true;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["34"]["Name"] = [[C]];
+G2L["34"]["Text"] = [[C]];
+G2L["34"]["Position"] = UDim2.new(0.4224298894405365, 0, 0.4651810824871063, 0);
+G2L["34"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.C.LocalScript
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.V
+G2L["36"] = Instance.new("TextButton", G2L["3"]);
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Size"] = UDim2.new(0, 34, 0, 38);
+G2L["36"]["Name"] = [[V]];
+G2L["36"]["Text"] = [[V]];
+G2L["36"]["Position"] = UDim2.new(0.4859813153743744, 0, 0.462395578622818, 0);
+G2L["36"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.V.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.B
+G2L["38"] = Instance.new("TextButton", G2L["3"]);
+G2L["38"]["TextWrapped"] = true;
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextScaled"] = true;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Size"] = UDim2.new(0, 34, 0, 38);
+G2L["38"]["Name"] = [[B]];
+G2L["38"]["Text"] = [[B]];
+G2L["38"]["Position"] = UDim2.new(0.5476635694503784, 0, 0.462395578622818, 0);
+G2L["38"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.B.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.N
+G2L["3a"] = Instance.new("TextButton", G2L["3"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Size"] = UDim2.new(0, 34, 0, 39);
+G2L["3a"]["Name"] = [[N]];
+G2L["3a"]["Text"] = [[N]];
+G2L["3a"]["Position"] = UDim2.new(0.6112149357795715, 0, 0.4596100151538849, 0);
+G2L["3a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.N.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.M
+G2L["3c"] = Instance.new("TextButton", G2L["3"]);
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextScaled"] = true;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Size"] = UDim2.new(0, 34, 0, 39);
+G2L["3c"]["Name"] = [[M]];
+G2L["3c"]["Text"] = [[M]];
+G2L["3c"]["Position"] = UDim2.new(0.6747663617134094, 0, 0.4596100151538849, 0);
+G2L["3c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.M.LocalScript
+G2L["3d"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl
+G2L["3e"] = Instance.new("TextButton", G2L["3"]);
+G2L["3e"]["TextWrapped"] = true;
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextScaled"] = true;
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Size"] = UDim2.new(0, 91, 0, 37);
+G2L["3e"]["Name"] = [[Ctrl]];
+G2L["3e"]["Text"] = [[Ctrl]];
+G2L["3e"]["Position"] = UDim2.new(0.014953271485865116, 0, 0.5682451128959656, 0);
+G2L["3e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl.LocalScript
+G2L["3f"] = Instance.new("LocalScript", G2L["3e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Alt
+G2L["40"] = Instance.new("TextButton", G2L["3"]);
+G2L["40"]["TextWrapped"] = true;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["TextScaled"] = true;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["40"]["TextSize"] = 14;
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Size"] = UDim2.new(0, 67, 0, 37);
+G2L["40"]["Name"] = [[Alt]];
+G2L["40"]["Text"] = [[Alt]];
+G2L["40"]["Position"] = UDim2.new(0.22429905831813812, 0, 0.5682451128959656, 0);
+G2L["40"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Alt.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Space
+G2L["42"] = Instance.new("TextButton", G2L["3"]);
+G2L["42"]["TextWrapped"] = true;
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextScaled"] = true;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["42"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Size"] = UDim2.new(0, 187, 0, 37);
+G2L["42"]["Name"] = [[Space]];
+G2L["42"]["Text"] = [[ ]];
+G2L["42"]["Position"] = UDim2.new(0.3682243227958679, 0, 0.5682451128959656, 0);
+G2L["42"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Space.LocalScript
+G2L["43"] = Instance.new("LocalScript", G2L["42"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl
+G2L["44"] = Instance.new("TextButton", G2L["3"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Size"] = UDim2.new(0, 91, 0, 37);
+G2L["44"]["Name"] = [[Ctrl]];
+G2L["44"]["Text"] = [[Ctrl]];
+G2L["44"]["Position"] = UDim2.new(0.7663550972938538, 0, 0.5682451128959656, 0);
+G2L["44"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl.LocalScript
+G2L["45"] = Instance.new("LocalScript", G2L["44"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift
+G2L["46"] = Instance.new("TextButton", G2L["3"]);
+G2L["46"]["TextWrapped"] = true;
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextScaled"] = true;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["46"]["TextSize"] = 14;
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Size"] = UDim2.new(0, 134, 0, 37);
+G2L["46"]["Name"] = [[Shift]];
+G2L["46"]["Text"] = [[Shift]];
+G2L["46"]["Position"] = UDim2.new(0.7495326995849609, 0, 0.4735375940799713, 0);
+G2L["46"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift.LocalScript
+G2L["47"] = Instance.new("LocalScript", G2L["46"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Enter
+G2L["48"] = Instance.new("TextButton", G2L["3"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Size"] = UDim2.new(0, 61, 0, 62);
+G2L["48"]["Name"] = [[Enter]];
+G2L["48"]["Text"] = [[Enter]];
+G2L["48"]["Position"] = UDim2.new(0.8691588640213013, 0, 0.29247909784317017, 0);
+G2L["48"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Enter.LocalScript
+G2L["49"] = Instance.new("LocalScript", G2L["48"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.1
+G2L["4a"] = Instance.new("TextButton", G2L["3"]);
+G2L["4a"]["TextWrapped"] = true;
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextScaled"] = true;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["4a"]["TextSize"] = 14;
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["4a"]["Name"] = [[1]];
+G2L["4a"]["Text"] = [[1]];
+G2L["4a"]["Position"] = UDim2.new(0.1607476770877838, 0, 0.155988872051239, 0);
+G2L["4a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.1.LocalScript
+G2L["4b"] = Instance.new("LocalScript", G2L["4a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.2
+G2L["4c"] = Instance.new("TextButton", G2L["3"]);
+G2L["4c"]["TextWrapped"] = true;
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextScaled"] = true;
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["4c"]["TextSize"] = 14;
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["4c"]["Name"] = [[2]];
+G2L["4c"]["Text"] = [[2]];
+G2L["4c"]["Position"] = UDim2.new(0.22429907321929932, 0, 0.155988872051239, 0);
+G2L["4c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.2.LocalScript
+G2L["4d"] = Instance.new("LocalScript", G2L["4c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.3
+G2L["4e"] = Instance.new("TextButton", G2L["3"]);
+G2L["4e"]["TextWrapped"] = true;
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextScaled"] = true;
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["4e"]["Name"] = [[3]];
+G2L["4e"]["Text"] = [[3]];
+G2L["4e"]["Position"] = UDim2.new(0.28598132729530334, 0, 0.155988872051239, 0);
+G2L["4e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.3.LocalScript
+G2L["4f"] = Instance.new("LocalScript", G2L["4e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.4
+G2L["50"] = Instance.new("TextButton", G2L["3"]);
+G2L["50"]["TextWrapped"] = true;
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["TextScaled"] = true;
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["50"]["TextSize"] = 14;
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["50"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["50"]["Name"] = [[4]];
+G2L["50"]["Text"] = [[4]];
+G2L["50"]["Position"] = UDim2.new(0.3476635813713074, 0, 0.155988872051239, 0);
+G2L["50"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.4.LocalScript
+G2L["51"] = Instance.new("LocalScript", G2L["50"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.5
+G2L["52"] = Instance.new("TextButton", G2L["3"]);
+G2L["52"]["TextWrapped"] = true;
+G2L["52"]["BorderSizePixel"] = 0;
+G2L["52"]["TextScaled"] = true;
+G2L["52"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["52"]["TextSize"] = 14;
+G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["52"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["52"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["52"]["Name"] = [[5]];
+G2L["52"]["Text"] = [[5]];
+G2L["52"]["Position"] = UDim2.new(0.4112149775028229, 0, 0.155988872051239, 0);
+G2L["52"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.5.LocalScript
+G2L["53"] = Instance.new("LocalScript", G2L["52"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.6
+G2L["54"] = Instance.new("TextButton", G2L["3"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextScaled"] = true;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["54"]["TextSize"] = 14;
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["54"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["54"]["Name"] = [[6]];
+G2L["54"]["Text"] = [[6]];
+G2L["54"]["Position"] = UDim2.new(0.46915891766548157, 0, 0.155988872051239, 0);
+G2L["54"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.6.LocalScript
+G2L["55"] = Instance.new("LocalScript", G2L["54"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.7
+G2L["56"] = Instance.new("TextButton", G2L["3"]);
+G2L["56"]["TextWrapped"] = true;
+G2L["56"]["BorderSizePixel"] = 0;
+G2L["56"]["TextScaled"] = true;
+G2L["56"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["56"]["TextSize"] = 14;
+G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["56"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["56"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["56"]["Name"] = [[7]];
+G2L["56"]["Text"] = [[7]];
+G2L["56"]["Position"] = UDim2.new(0.5308411717414856, 0, 0.155988872051239, 0);
+G2L["56"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.7.LocalScript
+G2L["57"] = Instance.new("LocalScript", G2L["56"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.7
+G2L["58"] = Instance.new("TextButton", G2L["3"]);
+G2L["58"]["TextWrapped"] = true;
+G2L["58"]["BorderSizePixel"] = 0;
+G2L["58"]["TextScaled"] = true;
+G2L["58"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["58"]["TextSize"] = 14;
+G2L["58"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["58"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["58"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["58"]["Name"] = [[7]];
+G2L["58"]["Text"] = [[7]];
+G2L["58"]["Position"] = UDim2.new(0.5308411717414856, 0, 0.155988872051239, 0);
+G2L["58"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.7.LocalScript
+G2L["59"] = Instance.new("LocalScript", G2L["58"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.8
+G2L["5a"] = Instance.new("TextButton", G2L["3"]);
+G2L["5a"]["TextWrapped"] = true;
+G2L["5a"]["BorderSizePixel"] = 0;
+G2L["5a"]["TextScaled"] = true;
+G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["5a"]["TextSize"] = 14;
+G2L["5a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5a"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["5a"]["Name"] = [[8]];
+G2L["5a"]["Text"] = [[8]];
+G2L["5a"]["Position"] = UDim2.new(0.5943925976753235, 0, 0.155988872051239, 0);
+G2L["5a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.8.LocalScript
+G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.9
+G2L["5c"] = Instance.new("TextButton", G2L["3"]);
+G2L["5c"]["TextWrapped"] = true;
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["TextScaled"] = true;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["5c"]["TextSize"] = 14;
+G2L["5c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["5c"]["Name"] = [[9]];
+G2L["5c"]["Text"] = [[9]];
+G2L["5c"]["Position"] = UDim2.new(0.6579440236091614, 0, 0.155988872051239, 0);
+G2L["5c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.9.LocalScript
+G2L["5d"] = Instance.new("LocalScript", G2L["5c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.BackSpace
+G2L["5e"] = Instance.new("TextButton", G2L["3"]);
+G2L["5e"]["TextWrapped"] = true;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextScaled"] = true;
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Size"] = UDim2.new(0, 134, 0, 37);
+G2L["5e"]["Name"] = [[BackSpace]];
+G2L["5e"]["Text"] = [[BackSpace]];
+G2L["5e"]["Position"] = UDim2.new(0.7327102422714233, 0, 0.15598884224891663, 0);
+G2L["5e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.BackSpace.LocalScript
+G2L["5f"] = Instance.new("LocalScript", G2L["5e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F1
+G2L["60"] = Instance.new("TextButton", G2L["3"]);
+G2L["60"]["TextWrapped"] = true;
+G2L["60"]["BorderSizePixel"] = 0;
+G2L["60"]["TextScaled"] = true;
+G2L["60"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["60"]["TextSize"] = 14;
+G2L["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["60"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["60"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["60"]["Name"] = [[F1]];
+G2L["60"]["Text"] = [[F1]];
+G2L["60"]["Position"] = UDim2.new(0.018691599369049072, 0, 0.033426202833652496, 0);
+G2L["60"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F1.LocalScript
+G2L["61"] = Instance.new("LocalScript", G2L["60"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F2
+G2L["62"] = Instance.new("TextButton", G2L["3"]);
+G2L["62"]["TextWrapped"] = true;
+G2L["62"]["BorderSizePixel"] = 0;
+G2L["62"]["TextScaled"] = true;
+G2L["62"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["62"]["TextSize"] = 14;
+G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["62"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["62"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["62"]["Name"] = [[F2]];
+G2L["62"]["Text"] = [[F2]];
+G2L["62"]["Position"] = UDim2.new(0.08224300295114517, 0, 0.033426202833652496, 0);
+G2L["62"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F2.LocalScript
+G2L["63"] = Instance.new("LocalScript", G2L["62"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F3
+G2L["64"] = Instance.new("TextButton", G2L["3"]);
+G2L["64"]["TextWrapped"] = true;
+G2L["64"]["BorderSizePixel"] = 0;
+G2L["64"]["TextScaled"] = true;
+G2L["64"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["64"]["TextSize"] = 14;
+G2L["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["64"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["64"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["64"]["Name"] = [[F3]];
+G2L["64"]["Text"] = [[F3]];
+G2L["64"]["Position"] = UDim2.new(0.14579440653324127, 0, 0.033426202833652496, 0);
+G2L["64"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F3.LocalScript
+G2L["65"] = Instance.new("LocalScript", G2L["64"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F4
+G2L["66"] = Instance.new("TextButton", G2L["3"]);
+G2L["66"]["TextWrapped"] = true;
+G2L["66"]["BorderSizePixel"] = 0;
+G2L["66"]["TextScaled"] = true;
+G2L["66"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["66"]["TextSize"] = 14;
+G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["66"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["66"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["66"]["Name"] = [[F4]];
+G2L["66"]["Text"] = [[F4]];
+G2L["66"]["Position"] = UDim2.new(0.20934581756591797, 0, 0.033426202833652496, 0);
+G2L["66"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F4.LocalScript
+G2L["67"] = Instance.new("LocalScript", G2L["66"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F5
+G2L["68"] = Instance.new("TextButton", G2L["3"]);
+G2L["68"]["TextWrapped"] = true;
+G2L["68"]["BorderSizePixel"] = 0;
+G2L["68"]["TextScaled"] = true;
+G2L["68"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["68"]["TextSize"] = 14;
+G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["68"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["68"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["68"]["Name"] = [[F5]];
+G2L["68"]["Text"] = [[F5]];
+G2L["68"]["Position"] = UDim2.new(0.27289721369743347, 0, 0.033426202833652496, 0);
+G2L["68"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F5.LocalScript
+G2L["69"] = Instance.new("LocalScript", G2L["68"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F6
+G2L["6a"] = Instance.new("TextButton", G2L["3"]);
+G2L["6a"]["TextWrapped"] = true;
+G2L["6a"]["BorderSizePixel"] = 0;
+G2L["6a"]["TextScaled"] = true;
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["6a"]["TextSize"] = 14;
+G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6a"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["6a"]["Name"] = [[F6]];
+G2L["6a"]["Text"] = [[F6]];
+G2L["6a"]["Position"] = UDim2.new(0.336448609828949, 0, 0.033426202833652496, 0);
+G2L["6a"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F6.LocalScript
+G2L["6b"] = Instance.new("LocalScript", G2L["6a"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F7
+G2L["6c"] = Instance.new("TextButton", G2L["3"]);
+G2L["6c"]["TextWrapped"] = true;
+G2L["6c"]["BorderSizePixel"] = 0;
+G2L["6c"]["TextScaled"] = true;
+G2L["6c"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["6c"]["TextSize"] = 14;
+G2L["6c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6c"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["6c"]["Name"] = [[F7]];
+G2L["6c"]["Text"] = [[F7]];
+G2L["6c"]["Position"] = UDim2.new(0.4000000059604645, 0, 0.033426202833652496, 0);
+G2L["6c"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F7.LocalScript
+G2L["6d"] = Instance.new("LocalScript", G2L["6c"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F8
+G2L["6e"] = Instance.new("TextButton", G2L["3"]);
+G2L["6e"]["TextWrapped"] = true;
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextScaled"] = true;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["6e"]["Name"] = [[F8]];
+G2L["6e"]["Text"] = [[F8]];
+G2L["6e"]["Position"] = UDim2.new(0.46355140209198, 0, 0.033426202833652496, 0);
+G2L["6e"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F8.LocalScript
+G2L["6f"] = Instance.new("LocalScript", G2L["6e"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F9
+G2L["70"] = Instance.new("TextButton", G2L["3"]);
+G2L["70"]["TextWrapped"] = true;
+G2L["70"]["BorderSizePixel"] = 0;
+G2L["70"]["TextScaled"] = true;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["70"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["70"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["70"]["Name"] = [[F9]];
+G2L["70"]["Text"] = [[F9]];
+G2L["70"]["Position"] = UDim2.new(0.5252336263656616, 0, 0.033426202833652496, 0);
+G2L["70"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F9.LocalScript
+G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F10
+G2L["72"] = Instance.new("TextButton", G2L["3"]);
+G2L["72"]["TextWrapped"] = true;
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["TextScaled"] = true;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["72"]["TextSize"] = 14;
+G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["72"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["72"]["Name"] = [[F10]];
+G2L["72"]["Text"] = [[F10]];
+G2L["72"]["Position"] = UDim2.new(0.5887850522994995, 0, 0.033426202833652496, 0);
+G2L["72"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F10.LocalScript
+G2L["73"] = Instance.new("LocalScript", G2L["72"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F11
+G2L["74"] = Instance.new("TextButton", G2L["3"]);
+G2L["74"]["TextWrapped"] = true;
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["TextScaled"] = true;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["74"]["TextSize"] = 14;
+G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["74"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["74"]["Name"] = [[F11]];
+G2L["74"]["Text"] = [[F11]];
+G2L["74"]["Position"] = UDim2.new(0.6523364782333374, 0, 0.033426202833652496, 0);
+G2L["74"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F11.LocalScript
+G2L["75"] = Instance.new("LocalScript", G2L["74"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F12
+G2L["76"] = Instance.new("TextButton", G2L["3"]);
+G2L["76"]["TextWrapped"] = true;
+G2L["76"]["BorderSizePixel"] = 0;
+G2L["76"]["TextScaled"] = true;
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(127, 127, 127);
+G2L["76"]["TextSize"] = 14;
+G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["76"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["76"]["Size"] = UDim2.new(0, 34, 0, 37);
+G2L["76"]["Name"] = [[F12]];
+G2L["76"]["Text"] = [[F12]];
+G2L["76"]["Position"] = UDim2.new(0.7158879041671753, 0, 0.033426202833652496, 0);
+G2L["76"]["BackgroundTransparency"] = 0.15000000596046448;
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.F12.LocalScript
+G2L["77"] = Instance.new("LocalScript", G2L["76"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.UICorner
+G2L["78"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.ScreenGui.MainKeyboard.KF.Q.LocalScript
+local function C_5()
+local script = G2L["5"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Q"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_5);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Tab.LocalScript
+local function C_7()
+local script = G2L["7"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Tab"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_7);
+-- StarterGui.ScreenGui.MainKeyboard.KF.W.LocalScript
+local function C_9()
+local script = G2L["9"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Q"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_9);
+-- StarterGui.ScreenGui.MainKeyboard.KF.E.LocalScript
+local function C_b()
+local script = G2L["b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "E"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.R.LocalScript
+local function C_d()
+local script = G2L["d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "R"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.T.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "T"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Y.LocalScript
+local function C_11()
+local script = G2L["11"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Y"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.MainKeyboard.KF.U.LocalScript
+local function C_13()
+local script = G2L["13"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "U"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_13);
+-- StarterGui.ScreenGui.MainKeyboard.KF.I.LocalScript
+local function C_15()
+local script = G2L["15"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "I"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_15);
+-- StarterGui.ScreenGui.MainKeyboard.KF.O.LocalScript
+local function C_17()
+local script = G2L["17"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "O"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_17);
+-- StarterGui.ScreenGui.MainKeyboard.KF.P.LocalScript
+local function C_19()
+local script = G2L["19"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "P"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_19);
+-- StarterGui.ScreenGui.MainKeyboard.KF.CapsLock.LocalScript
+local function C_1b()
+local script = G2L["1b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "CapsLock"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_1b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.A.LocalScript
+local function C_1d()
+local script = G2L["1d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "A"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_1d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.S.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "S"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_1f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.D.LocalScript
+local function C_21()
+local script = G2L["21"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "D"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_21);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F.LocalScript
+local function C_23()
+local script = G2L["23"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.ScreenGui.MainKeyboard.KF.G.LocalScript
+local function C_25()
+local script = G2L["25"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "G"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_25);
+-- StarterGui.ScreenGui.MainKeyboard.KF.H.LocalScript
+local function C_27()
+local script = G2L["27"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "H"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_27);
+-- StarterGui.ScreenGui.MainKeyboard.KF.J.LocalScript
+local function C_29()
+local script = G2L["29"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "J"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_29);
+-- StarterGui.ScreenGui.MainKeyboard.KF.K.LocalScript
+local function C_2b()
+local script = G2L["2b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "K"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_2b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.L.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "L"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift.LocalScript
+local function C_2f()
+local script = G2L["2f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "LeftShift"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_2f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Z.LocalScript
+local function C_31()
+local script = G2L["31"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Z"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_31);
+-- StarterGui.ScreenGui.MainKeyboard.KF.X.LocalScript
+local function C_33()
+local script = G2L["33"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "X"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_33);
+-- StarterGui.ScreenGui.MainKeyboard.KF.C.LocalScript
+local function C_35()
+local script = G2L["35"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "C"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_35);
+-- StarterGui.ScreenGui.MainKeyboard.KF.V.LocalScript
+local function C_37()
+local script = G2L["37"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "V"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_37);
+-- StarterGui.ScreenGui.MainKeyboard.KF.B.LocalScript
+local function C_39()
+local script = G2L["39"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "B"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_39);
+-- StarterGui.ScreenGui.MainKeyboard.KF.N.LocalScript
+local function C_3b()
+local script = G2L["3b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "N"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_3b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.M.LocalScript
+local function C_3d()
+local script = G2L["3d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "M"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_3d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl.LocalScript
+local function C_3f()
+local script = G2L["3f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "LeftControl"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_3f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Alt.LocalScript
+local function C_41()
+local script = G2L["41"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "LeftAlt"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_41);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Space.LocalScript
+local function C_43()
+local script = G2L["43"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Space"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_43);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Ctrl.LocalScript
+local function C_45()
+local script = G2L["45"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "RightControl"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_45);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Shift.LocalScript
+local function C_47()
+local script = G2L["47"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "RightShift"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_47);
+-- StarterGui.ScreenGui.MainKeyboard.KF.Enter.LocalScript
+local function C_49()
+local script = G2L["49"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "RightShift"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_49);
+-- StarterGui.ScreenGui.MainKeyboard.KF.1.LocalScript
+local function C_4b()
+local script = G2L["4b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "One"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_4b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.2.LocalScript
+local function C_4d()
+local script = G2L["4d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Two"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_4d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.3.LocalScript
+local function C_4f()
+local script = G2L["4f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Three"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_4f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.4.LocalScript
+local function C_51()
+local script = G2L["51"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Four"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_51);
+-- StarterGui.ScreenGui.MainKeyboard.KF.5.LocalScript
+local function C_53()
+local script = G2L["53"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Five"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_53);
+-- StarterGui.ScreenGui.MainKeyboard.KF.6.LocalScript
+local function C_55()
+local script = G2L["55"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Six"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_55);
+-- StarterGui.ScreenGui.MainKeyboard.KF.7.LocalScript
+local function C_57()
+local script = G2L["57"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Seven"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_57);
+-- StarterGui.ScreenGui.MainKeyboard.KF.7.LocalScript
+local function C_59()
+local script = G2L["59"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Seven"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_59);
+-- StarterGui.ScreenGui.MainKeyboard.KF.8.LocalScript
+local function C_5b()
+local script = G2L["5b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Eight"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_5b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.9.LocalScript
+local function C_5d()
+local script = G2L["5d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Nine"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_5d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.BackSpace.LocalScript
+local function C_5f()
+local script = G2L["5f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "Backspace"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_5f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F1.LocalScript
+local function C_61()
+local script = G2L["61"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F1"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_61);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F2.LocalScript
+local function C_63()
+local script = G2L["63"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F2"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_63);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F3.LocalScript
+local function C_65()
+local script = G2L["65"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F3"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_65);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F4.LocalScript
+local function C_67()
+local script = G2L["67"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F4"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_67);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F5.LocalScript
+local function C_69()
+local script = G2L["69"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F5"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_69);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F6.LocalScript
+local function C_6b()
+local script = G2L["6b"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F6"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_6b);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F7.LocalScript
+local function C_6d()
+local script = G2L["6d"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F7"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_6d);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F8.LocalScript
+local function C_6f()
+local script = G2L["6f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F8"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_6f);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F9.LocalScript
+local function C_71()
+local script = G2L["71"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F9"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_71);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F10.LocalScript
+local function C_73()
+local script = G2L["73"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F10"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_73);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F11.LocalScript
+local function C_75()
+local script = G2L["75"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F11"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_75);
+-- StarterGui.ScreenGui.MainKeyboard.KF.F12.LocalScript
+local function C_77()
+local script = G2L["77"];
+	script.Parent.MouseButton1Down:Connect(function()
+		getfenv().keytoclick = "F12"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
+	end)
+end;
+task.spawn(C_77);
+
+return G2L["1"], require;
